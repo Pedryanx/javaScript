@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores</title>
+</head>
+<body>
+    <script>
+        console.log("olá, mundo!")
+
+        // prompt("Informe o seu nome")
+
+        // falar sobre outras mensagens que a 
+
+        // alert("Olá, mundo!")
+
+        // confirm("Você deseja enviar os dados?")
+
+        const nome = prompt("informe seu nome:")
+        const sobrenome = prompt("informe seu sobrenome:")
+        const anoNascimentoPessoa = prompt("informe o ano do seu nascimento:")
+        let anoAtual = 2023;
+        let idadePessoa;
+
+        //processamento
+        //informe o ano de nascimento e em seguida mostrar a idade da pessoa
+        idadePessoa = anoAtual - anoNascimentoPessoa //bloco de código
+        //saida de dados
+        console.log(nome + sobrenome)
+        //concatenar
+        console.log( "o nome da pessoa é:" + nome + "e o sobrenome é" + sobrenome)
+        //interpolar
+        alert(`o nome da pessoa é: ${nome} e o sobrenome é: ${sobrenome} e a idade de: ${idadePessoa} anos`);
+
+        //declara variável para meses, dias, horas e minutos
+        let meses = 12
+        let dias = 365
+        let horas = 24
+        let minutos = 60
+
+        //entrada dos dados
+        const nomePessoa = prompt("Informe seu primeiro nome:")
+        const idadePessoa = prompt("Informe qual a idade:")
+
+        //processamento dos dados
+        let idadeMeses = idadePessoa * meses
+        let idadeDias = idadePessoa * dias
+        let idadeHoras = idadeDias * horas
+        let idadeMinutos = idadeHoras * minutos
+
+        //saida dos dados
+        alert(`nome: ${nomePessoa},idade em meses: ${idadeMeses}, idade em dias: ${idadeDias}, idade em horas: ${idadeHoras}, idade em minutos: ${idadeMinutos}`)
+
+        idadePessoa <= 0 || idadePessoa >= 100 ? alert("a idade da pessoa tem que ser maior que 0 e menor que 100")
+        :
+        alert(
+            `nome: ${nomePessoa},
+            idade em meses: ${idadeMeses},
+            idade em dias: ${idadeHoras},
+            idade em horas: ${idadeHoras},
+            idade em minutos: ${idadeMinutos}`)
+
+        
+
+
+
+
+    </script>
+</body>
+</html>
